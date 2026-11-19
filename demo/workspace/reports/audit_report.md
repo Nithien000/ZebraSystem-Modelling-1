@@ -16,7 +16,7 @@ Index: []
 SA Aquaneering 2026-07-08 2026-11-08            124                 68        54.8            56                 5                20
  SA Tecniplast 2026-04-26 2026-11-10            199                120        60.3            79                 5                33
 
-## Reading time of day (the protocol says 09:00)
+## Reading time of day
 
                 count    min    25%    50%    75%    max
 system                                                  

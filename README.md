@@ -10,8 +10,6 @@ recirculating systems into **process-based (mechanistic) models**, **parameteris
 uncertainty**, tests them on **an independent system**, and compares them against **small
 machine-learning forecasters**, honestly and reproducibly.
 
-Full write-up: [`report/technical_report.md`](report/technical_report.md) (about 6 pages).
-
 ## Motivation
 
 Early-warning systems for disease in aquaculture rely on predictive monitoring of water quality.
@@ -34,8 +32,7 @@ project asks three questions with six months of real facility data:
 | Days covered | 66 % | 59 % | 59 % |
 | Fish per litre | 2.4-2.6 | 0.7-1.9 | 5.1-7.1 |
 
-* Manual daily readings exported from the facility's app. Median reading time is about 11:00
-  (the protocol says 09:00).
+* Manual daily readings exported from the facility's app.
 * Tank records give fish counts over time (rebuilt from setup dates, mortality and archive dates)
   and cleaning dates.
 * **Not recorded:** feeding (it exists in the app but is unreliable, so it isn't used), water
@@ -163,7 +160,6 @@ python run_all.py          # about 4 minutes; rebuilds the cleaned data, figures
 | `data/clean/` | cleaned series, parameters, inferred events, metrics (created when you run the pipeline; not published) |
 | `src/` | `audit.py` → `conductivity_model.py` → `ph_model.py` → `calibrate_validate.py` → `transfer_test.py` → `ml_compare.py` |
 | `notebooks/` | `walkthrough.ipynb`, a guided tour of results |
-| `report/` | technical report (Markdown) |
 
 ## Author
 

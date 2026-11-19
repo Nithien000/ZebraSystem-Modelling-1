@@ -206,7 +206,7 @@ def main() -> None:
     cov = pd.DataFrame(cov)
     P(cov.to_string(index=False) + "\n")
 
-    P("## Reading time of day (the protocol says 09:00)\n")
+    P("## Reading time of day\n")
     P(w.groupby("system")["hour"].describe()[["count", "min", "25%", "50%", "75%", "max"]].round(2).to_string())
     P(f"\nShare of readings between 08:30 and 09:30: {100*((w.hour>=8.5)&(w.hour<=9.5)).mean():.1f}%; "
       f"after 12:00: {100*(w.hour>=12).mean():.1f}%\n")
