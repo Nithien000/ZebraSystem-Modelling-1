@@ -1,0 +1,14 @@
+# Real facility data are never published (code-only release).
+/data/
+/figures/
+/reports/
+report/*.pdf
+report/*.html
+report/resumo_*.md
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Demo: keep the synthetic inputs and stamped outputs, not the copied code or intermediate tables
+demo/workspace/src/
+demo/workspace/data/clean/
+app/
